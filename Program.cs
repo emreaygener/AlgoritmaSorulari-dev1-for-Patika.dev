@@ -6,6 +6,7 @@ namespace algoritma_sorulari_odev_1
     {
         static void Main(string[] args)
         {
+            // Soru 1
             Console.WriteLine("Please enter a positive 'n' value to specify how many numbers you are going to enter later");
             int n=int.Parse(Console.ReadLine());
             Console.WriteLine("Please enter "+n+" positive values.");
@@ -17,6 +18,7 @@ namespace algoritma_sorulari_odev_1
             }
             projectEven(arr);
 
+            // Soru 2
             Console.WriteLine("Please enter two positive 'n and m' values to specify how many numbers you are going to enter later and to check if these number can be divided to m");
             int n2=int.Parse(Console.ReadLine());
             int m2=int.Parse(Console.ReadLine());
@@ -28,6 +30,7 @@ namespace algoritma_sorulari_odev_1
             }
             dividedExactly(arr2,m2);
 
+            // Soru 3
             Console.WriteLine("Please enter a positive 'n ' values to specify how many word you are going to enter later");
             int n3=int.Parse(Console.ReadLine());
             Console.WriteLine("Please enter "+n3+" words.");
@@ -38,12 +41,14 @@ namespace algoritma_sorulari_odev_1
             }
             reverseOrder(str);
             
+            // Soru 4
             Console.WriteLine("Please enter a sentence");
             string str2=Console.ReadLine();
             sentenceBreaker(str2);
             
         }
 
+        // Soru 1 algoritma
         public static void projectEven(int[] even)
         {
             int inc=0;
@@ -59,6 +64,7 @@ namespace algoritma_sorulari_odev_1
                 }
             }
         }
+        // Soru 2 algoritma
         public static void dividedExactly(int[] div,int divider)
         {
             int inc=0;
@@ -76,6 +82,7 @@ namespace algoritma_sorulari_odev_1
             }
         }
 
+        // Soru 3 algoritma
         public static void reverseOrder(string[] str)
         {
             Array.Reverse(str);
@@ -83,6 +90,7 @@ namespace algoritma_sorulari_odev_1
                 Console.Write(item+" ");
         }
 
+        // Soru 4 algoritma
         public static void sentenceBreaker(string str)
         {
             string[] strr=str.Split(" ");
